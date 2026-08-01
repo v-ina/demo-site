@@ -4,11 +4,12 @@
   --beige-100: #f0e8da;
   --beige-200: #e2d5c3;
   --beige-300: #c8b69e;
-  --green-950: #173329;
-  --green-900: #203f33;
-  --green-800: #294b3d;
-  --green-700: #3f5948;
-  --green-500: #687e69;
+  --green-950: #21483a;
+  --green-900: #2b5746;
+  --green-800: #396654;
+  --green-700: #557562;
+  --green-600: #6a8570;
+  --green-500: #80967f;
   --rose-300: #d8aaa5;
   --orange-400: #c96f45;
   --ink: #262822;
@@ -3246,8 +3247,8 @@ h3 {
 }
 
 .announcement-sage {
-  color: #1e332b;
-  background: #b8c2ad;
+  color: var(--green-900);
+  background: #c7d2c4;
 }
 
 .announcement-editorial {
@@ -3268,7 +3269,7 @@ h3 {
 .announcement-soft {
   color: var(--green-900);
   text-align: center;
-  background: #dce2d5;
+  background: #e5ece3;
   font-style: italic;
 }
 
@@ -3377,8 +3378,8 @@ h3 {
 }
 
 .home-announcement-sage {
-  color: #1e332b;
-  background: #b8c2ad;
+  color: var(--green-900);
+  background: #c7d2c4;
 }
 
 .home-announcement-editorial {
@@ -3406,7 +3407,7 @@ h3 {
 
 .home-announcement-soft {
   color: var(--green-900);
-  background: #dce2d5;
+  background: #e5ece3;
   padding-block: 1.4rem;
   font-style: italic;
 }
