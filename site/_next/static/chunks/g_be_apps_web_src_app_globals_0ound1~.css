@@ -1560,6 +1560,49 @@ h3 {
   inset: 0 0 0 auto;
 }
 
+.social-live-scroll-hint {
+  z-index: 2;
+  width: 2rem;
+  height: 2rem;
+  color: var(--green-900);
+  pointer-events: none;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background: #f8f3e8f0;
+  border: 1px solid #265c492e;
+  border-radius: 999px;
+  place-items: center;
+  animation: 1.7s ease-in-out infinite social-live-scroll-hint;
+  display: grid;
+  position: absolute;
+  bottom: .7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 5px 16px #1c413429;
+}
+
+.social-live-scroll-hint svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  width: .95rem;
+  height: .95rem;
+}
+
+@keyframes social-live-scroll-hint {
+  0%, 100% {
+    opacity: .78;
+    transform: translate(-50%, -2px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(-50%, 4px);
+  }
+}
+
 .social-live-panel > a {
   color: var(--green-900);
   align-items: center;
@@ -4918,7 +4961,7 @@ h3 {
     scroll-behavior: auto;
   }
 
-  .hero-copy > *, .hero-visual, .page-hero-inner, .section > .shell, .professional-networks > .shell {
+  .hero-copy > *, .hero-visual, .page-hero-inner, .section > .shell, .professional-networks > .shell, .social-live-scroll-hint {
     animation: none !important;
   }
 
