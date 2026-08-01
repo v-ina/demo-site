@@ -1539,12 +1539,25 @@ h3 {
 
 .social-live-frame-facebook {
   --social-feed-crop: 78px;
+  max-width: 500px;
   height: 390px;
+  margin-inline: auto;
+  position: relative;
 }
 
 .social-live-frame-facebook iframe {
-  max-width: 500px;
-  margin: 0 auto;
+  width: calc(100% + 18px);
+  max-width: none;
+  margin: 0;
+}
+
+.social-live-frame-facebook:after {
+  content: "";
+  pointer-events: none;
+  background: #f5f6f7;
+  width: 14px;
+  position: absolute;
+  inset: 0 0 0 auto;
 }
 
 .social-live-panel > a {
