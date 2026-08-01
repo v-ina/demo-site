@@ -6,6 +6,7 @@ import process from "node:process";
 const source = new URL(process.argv[2] ?? "http://localhost:3000/");
 const root = path.resolve(import.meta.dirname, "..");
 const output = path.join(root, "site");
+const snapshotVersion = Date.now().toString(36);
 const pageQueue = [new URL("/", source)];
 const queuedPages = new Set(["/"]);
 const savedAssets = new Map();
@@ -167,7 +168,9 @@ function rewritePageLink(rawUrl, currentPath) {
 async function rewriteAssetReference(rawUrl, currentPath, baseUrl) {
   if (/^(data:|blob:|#)/i.test(rawUrl)) return rawUrl;
   const saved = await saveAsset(rawUrl, baseUrl);
-  return saved ? relativeUrl(pageDirectory(currentPath), saved) : rawUrl;
+  if (!saved) return rawUrl;
+  const rewritten = relativeUrl(pageDirectory(currentPath), saved);
+  return saved.endsWith(".css") ? `${rewritten}?v=${snapshotVersion}` : rewritten;
 }
 
 async function transformHtml(html, pageUrl) {
