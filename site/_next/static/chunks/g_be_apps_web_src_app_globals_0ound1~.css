@@ -1428,7 +1428,7 @@ h3 {
   background: var(--green-900);
   color: var(--white);
   position: relative;
-  overflow: hidden;
+  overflow: clip;
 }
 
 .social-feed-section:before {
@@ -1467,6 +1467,14 @@ h3 {
   align-items: start;
   gap: clamp(1.25rem, 2.5vw, 2rem);
   display: grid;
+}
+
+.social-live-slide {
+  min-width: 0;
+}
+
+.social-live-slider-input, .social-live-slider-controls {
+  display: none;
 }
 
 .social-live-panel {
@@ -4429,14 +4437,74 @@ h3 {
     gap: .8rem;
   }
 
+  .social-live-slider {
+    position: relative;
+  }
+
+  .social-live-slider-input {
+    opacity: 0;
+    pointer-events: none;
+    width: 1px;
+    height: 1px;
+    display: block;
+    position: absolute;
+  }
+
+  .social-live-slider-controls {
+    justify-content: flex-end;
+    gap: .55rem;
+    margin: -1rem 0 .9rem;
+    display: flex;
+  }
+
+  .social-live-slider-controls label {
+    color: #ffffffbf;
+    cursor: pointer;
+    border: 1px solid #ffffff47;
+    border-radius: 999px;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: .55rem .8rem;
+    font-size: .72rem;
+    font-weight: 800;
+    transition: background .18s, border-color .18s, color .18s;
+    display: inline-flex;
+  }
+
+  #social-live-instagram:checked ~ .social-live-slider-controls label[for="social-live-instagram"], #social-live-facebook:checked ~ .social-live-slider-controls label[for="social-live-facebook"] {
+    border-color: var(--beige-100);
+    background: var(--beige-100);
+    color: var(--green-900);
+  }
+
+  .social-live-viewport {
+    overflow: clip;
+  }
+
   .social-live-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 50%);
+    gap: 0;
+    width: 200%;
+    transition: transform .52s cubic-bezier(.22, 1, .36, 1);
+  }
+
+  #social-live-facebook:checked ~ .social-live-viewport .social-live-grid {
+    transform: translateX(-50%);
+  }
+
+  .social-live-slide:first-child {
+    padding-right: .5rem;
+  }
+
+  .social-live-slide:last-child {
+    padding-left: .5rem;
   }
 
   .social-live-panel {
     width: 100%;
-    max-width: 720px;
-    margin: 0 auto;
+    max-width: none;
+    margin: 0;
   }
 }
 
@@ -4452,6 +4520,15 @@ h3 {
 
   .social-live-panel-heading {
     align-items: flex-start;
+  }
+
+  .social-live-slider-controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: grid;
+  }
+
+  .social-live-slider-controls label {
+    width: 100%;
   }
 
   .social-live-frame-instagram {
