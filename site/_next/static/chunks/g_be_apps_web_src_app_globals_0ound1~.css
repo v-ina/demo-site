@@ -1462,125 +1462,90 @@ h3 {
   margin: 0 0 .65rem;
 }
 
-.social-feed-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(1rem, 2vw, 1.5rem);
+.social-live-grid {
+  grid-template-columns: minmax(0, 1.08fr) minmax(380px, .92fr);
+  align-items: start;
+  gap: clamp(1.25rem, 2.5vw, 2rem);
   display: grid;
 }
 
-.social-feed-card {
-  isolation: isolate;
-  min-height: clamp(390px, 42vw, 540px);
-  color: var(--white);
+.social-live-panel {
+  background: #ffffff14;
   border: 1px solid #fff3;
   border-radius: 1.4rem;
-  position: relative;
-  overflow: hidden;
+  min-width: 0;
+  padding: clamp(.8rem, 1.8vw, 1.25rem);
   box-shadow: 0 24px 60px #0a1e183d;
 }
 
-.social-feed-card:after {
-  content: "";
-  z-index: -1;
-  background: linear-gradient(#0f292014 28%, #0f2920f0 100%);
-  position: absolute;
-  inset: 0;
+.social-live-panel-heading {
+  color: #ffffffad;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: .15rem .15rem .9rem;
+  font-size: .72rem;
+  font-weight: 700;
+  display: flex;
 }
 
-.social-feed-card img {
-  z-index: -2;
-  object-fit: cover;
-  transition: transform .7s cubic-bezier(.22, 1, .36, 1), filter .3s;
-}
-
-.social-feed-card:hover img {
-  filter: saturate(1.05);
-  transform: scale(1.04);
-}
-
-.social-feed-platform {
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+.social-live-platform {
+  color: var(--white);
   letter-spacing: .06em;
   text-transform: uppercase;
-  background: #1a3e32c7;
-  border: 1px solid #ffffff47;
-  border-radius: 999px;
   align-items: center;
   gap: .55rem;
-  padding: .5rem .75rem;
-  font-size: .72rem;
+  font-size: .76rem;
   font-weight: 800;
   display: inline-flex;
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
 }
 
-.social-feed-platform .brand-icon {
+.social-live-platform .brand-icon {
   width: 1rem;
   height: 1rem;
   font-size: .6rem;
 }
 
-.social-feed-copy {
-  gap: .5rem;
-  display: grid;
-  position: absolute;
-  bottom: 1.25rem;
-  left: 1.25rem;
-  right: 1.25rem;
+.social-live-frame-shell {
+  background: #fff;
+  border-radius: .9rem;
+  width: 100%;
+  overflow: hidden;
 }
 
-.social-feed-copy strong {
-  font-family: var(--serif);
-  font-size: clamp(1.65rem, 2.5vw, 2.2rem);
-  font-weight: 500;
-  line-height: 1;
+.social-live-frame-shell iframe {
+  background: #fff;
+  border: 0;
+  width: 100%;
+  height: 720px;
+  display: block;
 }
 
-.social-feed-copy > span {
-  color: #ffffffc7;
-  font-size: .86rem;
-  line-height: 1.55;
+.social-live-frame-facebook iframe {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-.social-feed-copy small {
+.social-live-panel > a {
   color: var(--white);
-  letter-spacing: .04em;
-  margin-top: .3rem;
-  font-size: .72rem;
-  font-weight: 800;
-}
-
-.social-feed-actions {
-  justify-content: center;
-  gap: .8rem;
-  margin-top: 2rem;
-  display: flex;
-}
-
-.social-feed-actions a {
-  color: var(--white);
-  border: 1px solid #ffffff47;
-  border-radius: 999px;
   align-items: center;
-  gap: .6rem;
-  padding: .75rem 1rem;
+  gap: .4rem;
+  margin: 1rem .2rem .15rem;
   font-size: .78rem;
   font-weight: 800;
   display: inline-flex;
 }
 
-.social-feed-actions a:hover {
-  border-color: var(--white);
-  background: #ffffff14;
+.social-live-panel > a:hover {
+  text-underline-offset: .25rem;
+  text-decoration: underline;
 }
 
-.social-feed-actions .brand-icon {
-  width: 1.15rem;
-  height: 1.15rem;
-  font-size: .66rem;
+.social-live-note {
+  color: #ffffff9e;
+  text-align: center;
+  margin: 1.25rem 0 0;
+  font-size: .72rem;
 }
 
 .professional-networks {
@@ -4450,6 +4415,16 @@ h3 {
     grid-template-columns: 1fr;
     gap: .8rem;
   }
+
+  .social-live-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-live-panel {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 640px) {
@@ -4457,20 +4432,17 @@ h3 {
     background-attachment: scroll;
   }
 
-  .social-feed-grid {
-    grid-template-columns: 1fr;
+  .social-live-panel {
+    border-radius: 1.1rem;
+    padding: .65rem;
   }
 
-  .social-feed-card {
-    min-height: 430px;
+  .social-live-panel-heading {
+    align-items: flex-start;
   }
 
-  .social-feed-actions {
-    display: grid;
-  }
-
-  .social-feed-actions a {
-    justify-content: center;
+  .social-live-frame-shell iframe {
+    height: 680px;
   }
 
   .professional-network-card:nth-child(2n) {
