@@ -1470,8 +1470,8 @@ h3 {
 }
 
 .social-live-panel {
-  background: #ffffff14;
-  border: 1px solid #fff3;
+  border: 1px solid var(--beige-200);
+  background: var(--beige-100);
   border-radius: 1.4rem;
   min-width: 0;
   padding: clamp(.8rem, 1.8vw, 1.25rem);
@@ -1479,7 +1479,7 @@ h3 {
 }
 
 .social-live-panel-heading {
-  color: #ffffffad;
+  color: var(--green-700);
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
@@ -1490,7 +1490,7 @@ h3 {
 }
 
 .social-live-platform {
-  color: var(--white);
+  color: var(--green-900);
   letter-spacing: .06em;
   text-transform: uppercase;
   align-items: center;
@@ -1507,18 +1507,31 @@ h3 {
 }
 
 .social-live-frame-shell {
-  background: #fff;
+  --social-feed-crop: 0px;
+  background: var(--beige-50);
   border-radius: .9rem;
   width: 100%;
+  height: 540px;
   overflow: hidden;
 }
 
 .social-live-frame-shell iframe {
+  width: 100%;
+  height: calc(100% + var(--social-feed-crop));
+  transform: translateY(calc(-1 * var(--social-feed-crop)));
   background: #fff;
   border: 0;
-  width: 100%;
-  height: 720px;
   display: block;
+}
+
+.social-live-frame-instagram {
+  --social-feed-crop: 158px;
+  height: 390px;
+}
+
+.social-live-frame-facebook {
+  --social-feed-crop: 78px;
+  height: 390px;
 }
 
 .social-live-frame-facebook iframe {
@@ -1527,7 +1540,7 @@ h3 {
 }
 
 .social-live-panel > a {
-  color: var(--white);
+  color: var(--green-900);
   align-items: center;
   gap: .4rem;
   margin: 1rem .2rem .15rem;
@@ -4441,8 +4454,13 @@ h3 {
     align-items: flex-start;
   }
 
-  .social-live-frame-shell iframe {
-    height: 680px;
+  .social-live-frame-instagram {
+    --social-feed-crop: 148px;
+    height: 220px;
+  }
+
+  .social-live-frame-facebook {
+    height: 360px;
   }
 
   .professional-network-card:nth-child(2n) {
