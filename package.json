@@ -1,0 +1,10 @@
+{
+  "name": "genevieve-static-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "snapshot": "node scripts/snapshot.mjs",
+    "serve": "node scripts/serve.mjs"
+  }
+}
