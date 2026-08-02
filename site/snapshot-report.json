@@ -1,6 +1,6 @@
 {
-  "source": "http://localhost:3000/",
-  "generatedAt": "2026-08-02T09:13:24.654Z",
+  "source": "http://127.0.0.1:3010/",
+  "generatedAt": "2026-08-02T10:17:16.287Z",
   "pages": [
     {
       "path": "/",
@@ -39,7 +39,31 @@
       "status": "saved"
     },
     {
+      "path": "/definitions/syndrome-intestin-irritable",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/maladie-de-crohn",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/rectocolite-hemorragique",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/maladie-coeliaque",
+      "status": "saved"
+    },
+    {
       "path": "/champs-action/nutrition-cancer",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/alimentation-pendant-traitements",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/denutrition",
       "status": "saved"
     },
     {
@@ -47,7 +71,39 @@
       "status": "saved"
     },
     {
+      "path": "/definitions/troubles-alimentaires-pediatriques",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/troubles-comportement-alimentaire",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/croissance-enfant",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/reseau-reppop",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/accompagnement-pluridisciplinaire",
+      "status": "saved"
+    },
+    {
       "path": "/champs-action/diabete",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/diabete-type-1",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/diabete-type-2",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/diabete-gestationnel",
       "status": "saved"
     },
     {
@@ -56,10 +112,6 @@
     },
     {
       "path": "/cabinets/pauillac",
-      "status": "saved"
-    },
-    {
-      "path": "/menus-de-saison",
       "status": "saved"
     },
     {
@@ -148,6 +200,18 @@
     },
     {
       "path": "/blog/diabete-journee-d-information",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/diversification-menee-par-enfant",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/troubles-oralite-alimentaire",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/repop-reseau",
       "status": "saved"
     },
     {
