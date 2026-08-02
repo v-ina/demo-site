@@ -1,11 +1,374 @@
 {
-  "source": "http://127.0.0.1:3013/",
-  "generatedAt": "2026-08-02T14:07:21.672Z",
+  "source": "http://127.0.0.1:3012/",
+  "generatedAt": "2026-08-02T12:47:45.351Z",
   "pages": [
     {
       "path": "/",
-      "status": "failed",
-      "error": "fetch failed"
+      "status": "saved"
+    },
+    {
+      "path": "/mon-parcours",
+      "status": "saved"
+    },
+    {
+      "path": "/champs-action",
+      "status": "saved"
+    },
+    {
+      "path": "/consultations",
+      "status": "saved"
+    },
+    {
+      "path": "/formations",
+      "status": "saved"
+    },
+    {
+      "path": "/lectures",
+      "status": "saved"
+    },
+    {
+      "path": "/blog",
+      "status": "saved"
+    },
+    {
+      "path": "/me-contacter",
+      "status": "saved"
+    },
+    {
+      "path": "/champs-action/systeme-digestif",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/syndrome-intestin-irritable",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/maladie-de-crohn",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/rectocolite-hemorragique",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/maladie-coeliaque",
+      "status": "saved"
+    },
+    {
+      "path": "/champs-action/nutrition-cancer",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/alimentation-pendant-traitements",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/denutrition",
+      "status": "saved"
+    },
+    {
+      "path": "/champs-action/enfants-adolescents",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/troubles-alimentaires-pediatriques",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/troubles-comportement-alimentaire",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/croissance-enfant",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/reseau-reppop",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/accompagnement-pluridisciplinaire",
+      "status": "saved"
+    },
+    {
+      "path": "/champs-action/diabete",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/diabete-type-1",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/diabete-type-2",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/diabete-gestationnel",
+      "status": "saved"
+    },
+    {
+      "path": "/cabinets/le-pian-medoc",
+      "status": "saved"
+    },
+    {
+      "path": "/cabinets/pauillac",
+      "status": "saved"
+    },
+    {
+      "path": "/mentions-legales",
+      "status": "saved"
+    },
+    {
+      "path": "/confidentialite",
+      "status": "saved"
+    },
+    {
+      "path": "/accessibilite",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/pause-estivale",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/categorie/actualite",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/atelier-graines-germees",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/categorie/recettes-de-printemps",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/soiree-discussion-autour-de-l-alimentation-avec-les-parents-d-eleves-de-blanquefort",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/vous-bougez-pensez-aussi-a-bien-manger",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/cake-aux-haricots-et-aux-pommes",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/categorie/recettes",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/categorie/recettes-sans-gluten",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/categorie/recettes-d-automne",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/soupe-de-petits-pois-aux-fanes-de-radis",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/categorie/recettes-vegetariennes",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/atelier-alimentation-pour-futures-et-jeunes-mamans-cette-semaine",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/fenouil-tatin-au-miel",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/categorie/recettes-d-hiver",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/ateliers-autour-de-la-grossesse",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/mangez-des-legumineuses-pour-une-alimentation-durable",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/mici-tours-a-bordeaux",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/diabete-journee-d-information",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/diversification-menee-par-enfant",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/troubles-oralite-alimentaire",
+      "status": "saved"
+    },
+    {
+      "path": "/definitions/repop-reseau",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/prochain-atelier-alimentation-futures-mamans-jeudi-28-juillet-a-18h",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/prochain-atelier-pour-les-mamans-le-19-mai",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/nouvel-atelier-alimentation-de-maman",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/ateliers-alimentation-autour-de-maman-et-de-bebe",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/muffins-cereales-et-poireau",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/soupe-de-pois-casses",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/cake-a-l-oseille-et-au-fromage",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/veloute-d-orties-et-de-fanes-de-radis",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/pate-a-tartiner-maison",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/toasts-radis-noir-rillettes-de-sardines-et-alfalfa-germee",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/graines-germees-2eme-etape-egouttage-et-rincage",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/graines-germees-maison-1ere-etape-trempage",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/compote-rhubarbe-pomme",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/rillettes-de-poissons-bleus",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/categorie/recettes-de-legumineuses",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/cake-aubergines-et-chevre",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/tiramisu-au-pain-d-epices",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/quiche-poivron-truite-saumonee",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/categorie/recettes-d-ete",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/salade-composee-pour-l-ete",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/delice-d-haricots-azukis",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/gratin-de-brocolis-au-roquefort",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/salade-de-chou-rouge-pomme-et-noix",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/jack-be-little-garnis-aux-poivrons-et-maquereau",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/veloute-de-potimarron-et-chou-fleur",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/jack-be-little-garnis-aux-pois-casses",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/mousse-au-chocolat-a-l-aquafaba",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/hoummous",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/tomates-farcies-aux-proteines-de-soja-texturees",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/galettes-de-lentilles-aux-carottes",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/categorie/recettes-avec-gluten",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/aubergines-au-four-et-chevre",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/truite-saumonnee-riz-courgettes",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/poulet-pommes-de-terre-haricots-verts",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/ma-tarte-d-ete-preferee",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/tarte-de-fin-d-ete-poivrons-champignons-chevre",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/clafoutis-de-tomates-cerises-au-basilic-et-chevre",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/hamburger-maison",
+      "status": "saved"
+    },
+    {
+      "path": "/blog/cake-au-potimarron-et-aux-herbes-de-la-mer",
+      "status": "saved"
     }
   ],
   "failedAssets": []
