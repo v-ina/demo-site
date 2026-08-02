@@ -1,6 +1,6 @@
 {
   "source": "http://localhost:3000/",
-  "generatedAt": "2026-08-01T21:48:55.676Z",
+  "generatedAt": "2026-08-02T08:53:33.086Z",
   "pages": [
     {
       "path": "/",
@@ -47,7 +47,7 @@
       "status": "saved"
     },
     {
-      "path": "/champs-action/repop-aquitaine",
+      "path": "/champs-action/diabete",
       "status": "saved"
     },
     {
