@@ -1001,6 +1001,57 @@ h3 {
   font-size: clamp(1.08rem, 2vw, 1.35rem);
 }
 
+.care-platform-badge {
+  width: fit-content;
+  color: var(--green-950);
+  background: #ffffffb8;
+  border: 1px solid #2b57463d;
+  border-radius: 1rem;
+  align-items: center;
+  gap: .75rem;
+  margin-top: 1rem;
+  padding: .65rem .9rem;
+  transition: border-color .18s, transform .18s, box-shadow .18s;
+  display: inline-flex;
+  box-shadow: 0 10px 26px #22483a17;
+}
+
+.care-platform-badge:hover {
+  border-color: var(--green-700);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px #22483a24;
+}
+
+.care-platform-badge svg {
+  fill: none;
+  width: 2.3rem;
+  height: 2.3rem;
+  stroke: var(--green-800);
+  stroke-width: 1.8px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: none;
+}
+
+.care-platform-badge span:first-of-type {
+  line-height: 1.25;
+  display: grid;
+}
+
+.care-platform-badge small {
+  color: var(--green-700);
+  font-size: .68rem;
+}
+
+.care-platform-badge strong {
+  font-size: .86rem;
+}
+
+.care-platform-badge > span:last-child {
+  color: var(--green-700);
+  margin-left: .2rem;
+}
+
 .content-section {
   padding-block: clamp(3.5rem, 8vw, 7rem);
 }
